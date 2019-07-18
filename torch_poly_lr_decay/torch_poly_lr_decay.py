@@ -1,6 +1,6 @@
 from torch.optim.lr_scheduler import _LRScheduler
 
-class PolynomialLRScheduler(_LRScheduler):
+class PolynomialLRDecay(_LRScheduler):
     """Polynomial learning rate decay until step reach to max_decay_step
     
     Args:
