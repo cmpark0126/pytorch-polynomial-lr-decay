@@ -14,7 +14,7 @@ $ pip install git+https://github.com/cmpark0126/pytorch-polynomial-lr-decay.git
 ```python
 from torch_poly_lr_decay import PolynomialLRDecay
 
-scheduler_poly_lr_decay = PolynomialLRDecay(optim, max_decay_steps=100, power=2.0)
+scheduler_poly_lr_decay = PolynomialLRDecay(optim, max_decay_steps=100, end_learning_rate=0.0001, power=2.0)
 
 for epoch in range(train_epoch):
     scheduler_poly_lr_decay.step()     # you can handle step as epoch number
@@ -26,7 +26,7 @@ or
 ```python
 from torch_poly_lr_decay import PolynomialLRDecay
 
-scheduler_poly_lr_decay = PolynomialLRDecay(optim, max_decay_steps=100, power=2.0)
+scheduler_poly_lr_decay = PolynomialLRDecay(optim, max_decay_steps=100, end_learning_rate=0.0001, power=2.0)
 
 ...
 
